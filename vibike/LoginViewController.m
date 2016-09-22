@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _items = @[@{@"title":@"Mi titulo", @"description":@"Mi descripcion aquí"},
+    _items = @[@{@"title":@"Mi titulo 1", @"description":@"Mi descripcion aquí"},
                @{@"title":@"Mi titulo 2", @"description":@"Mi descripcion aquí"},
                @{@"title":@"Mi titulo 3", @"description":@"Mi descripcion aquí 3"}];
     
