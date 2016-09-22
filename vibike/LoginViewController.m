@@ -18,13 +18,15 @@
 - (IBAction)clickButton:(id)sender {
     _items = @[@{@"title":@"NUEVO", @"description":@"NUEVO"}];
     [_collectionView reloadData];
+    [_collectionView reloadData];
+
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     _items = @[@{@"title":@"Mi titulo XX", @"description":@"Mi descripcion aquí"},
                @{@"title":@"Mi titulo 2", @"description":@"Mi descripcion aquí"},
-               @{@"title":@"Mi titulo 3", @"description":@"Mi descripcion aquí 3"}];
+               @{@"title":@"Mi titulo 4", @"description":@"Mi descripcion aquí 3"}];
     
     
     [self.collectionView registerClass:[LoginItemCollectionViewCell class] forCellWithReuseIdentifier:@"CellId"];
