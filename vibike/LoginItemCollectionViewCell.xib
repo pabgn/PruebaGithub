@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LoginItemCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_oes_oes" translatesAutoresizingMaskIntoConstraints="NO" id="rzl-Qz-lpy"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi aplicación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdt-Ki-S5Q">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DAS-Sm-4CA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Esta es la mejor aplicación que vais a poder descargar nunca y tiene muchas funcionalidades." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-Qz-cg2">
+                        <frame key="frameInset" minX="34" minY="74" width="255" height="84"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rzl-Qz-lpy" secondAttribute="trailing" id="9dN-GF-sxP"/>
+                <constraint firstAttribute="bottom" secondItem="rzl-Qz-lpy" secondAttribute="bottom" id="DRD-JP-iCp"/>
+                <constraint firstItem="tdt-Ki-S5Q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="27" id="HaT-xS-H5n"/>
+                <constraint firstAttribute="trailing" secondItem="2bW-Qz-cg2" secondAttribute="trailing" constant="34" id="Hsp-dK-aNV"/>
+                <constraint firstItem="rzl-Qz-lpy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RGU-N8-ceD"/>
+                <constraint firstItem="rzl-Qz-lpy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ubr-mZ-VLv"/>
+                <constraint firstItem="2bW-Qz-cg2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="34" id="X9e-Gg-Jld"/>
+                <constraint firstAttribute="trailing" secondItem="tdt-Ki-S5Q" secondAttribute="trailing" constant="68" id="ctd-UZ-wPH"/>
+                <constraint firstItem="2bW-Qz-cg2" firstAttribute="top" secondItem="tdt-Ki-S5Q" secondAttribute="bottom" constant="26" id="sAP-oH-yRm"/>
+                <constraint firstItem="tdt-Ki-S5Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="67" id="vua-gs-PBD"/>
+            </constraints>
+            <size key="customSize" width="323" height="152"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="2bW-Qz-cg2" id="WnT-Zy-zy7"/>
+                <outlet property="tituloLabel" destination="tdt-Ki-S5Q" id="QE1-0f-jBk"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="86"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fondo_oes_oes" width="540" height="960"/>
+    </resources>
+</document>

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LoginViewController.h
 //  vibike
 //
 //  Created by Pablo García-Nieto Rodríguez  on 22/9/16.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface LoginViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
 
 
 @end
-
