@@ -1,0 +1,40 @@
+#pragma mark Table View
+
+
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 75;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath
+{
+    AnimalViewController*a = [AnimalViewController new];
+    a.animal = [_animals objectAtIndex:[indexPath row]];
+    
+    [self.navigationController pushViewController:a animated:YES];
+    
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_animals count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString *simpleTableIdentifier = @"cell";
+    
+    AnimalRowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"AnimalRowTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+    }    
+    
+    return cell;
+    
+}
